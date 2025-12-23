@@ -1,3 +1,16 @@
 spring:
   application:
     name: AuctionApplication
+
+  datasource:
+    url: jdbc:postgresql://localhost:5432/auction_db
+    username: postgres
+    password: 2004
+
+  jpa:
+    hibernate:
+      ddl-auto: validate
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
